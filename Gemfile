@@ -39,7 +39,7 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano', github: 'capistrano/capistrano'
+gem 'capistrano', :github => 'capistrano/capistrano'
 gem 'capistrano-rails'
 gem 'capistrano-bundler'
 gem 'capistrano-rvm'
