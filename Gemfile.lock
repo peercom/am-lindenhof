@@ -99,6 +99,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25)
     multi_json (1.8.2)
+    mysql2 (0.3.13)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.7.0)
@@ -233,6 +234,7 @@ DEPENDENCIES
   capistrano-rvm
   coffee-rails (~> 3.2.1)
   jquery-rails
+  mysql2
   rails (= 3.2.14)
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
