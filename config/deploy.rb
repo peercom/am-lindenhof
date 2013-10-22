@@ -1,7 +1,13 @@
+require 'capistrano/rails'
+require 'capistrano/bundler'
+require 'capistrano/rvm'
+
 set :application, 'Am Lindenhof'
 
-set :repository,  "https://github.com/peercom/am-lindenhof.git"
-#set :deploy_via, :copy
+set :repo_url,  "git@github.com:peercom/am-lindenhof.git"
+
+set :rvm_type, :user
+set :rvm_ruby_version, '1.9.3@refinery'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
@@ -23,7 +29,7 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      execute :touch, release_path.join('tmp/restart.txt')
+      #execute :touch, release_path.join('tmp/restart.txt')
     end
   end
 
