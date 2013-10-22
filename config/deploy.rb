@@ -1,10 +1,10 @@
-set :application, 'my app name'
+set :application, 'Am Lindenhof'
 set :repo_url, 'git@example.com:me/my_repo.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # set :deploy_to, '/var/www/my_app'
-# set :scm, :git
+set :scm, :git
 
 # set :format, :pretty
 # set :log_level, :debug
@@ -21,8 +21,7 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
+      execute :touch, release_path.join('tmp/restart.txt')
     end
   end
 
