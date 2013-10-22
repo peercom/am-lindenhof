@@ -11,6 +11,7 @@ end
 
 group :poduction, :staging do
   gem 'mysql2'
+  gem 'sqlite3'
 end
 
 
