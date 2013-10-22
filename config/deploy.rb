@@ -1,5 +1,7 @@
 set :application, 'Am Lindenhof'
-set :repo_url, 'git@example.com:me/my_repo.git'
+
+set :repository,  "https://github.com/peercom/am-lindenhof.git"
+#set :deploy_via, :copy
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
