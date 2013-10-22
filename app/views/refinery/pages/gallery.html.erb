@@ -1,0 +1,22 @@
+<% content_for :body do %>
+  <%= raw @page.content_for(:body) %>
+  <ul id='gallery'>
+    <% @page.images.each do |image| %>
+	<%  unless image == @page.images.first %>
+      <li>
+        <%= link_to image_tag(image.thumbnail("200x200#c").url), image.thumbnail("900x600").url, { :rel => "fancygroup", :class => "fancybox" } %>
+      </li>
+	  <% end %>
+   <% end %>
+  </ul>
+<% end %>
+
+<% content_for :javascripts do %>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+	</script>
+<% end %>
+
+<%= render '/refinery/content_page' %>

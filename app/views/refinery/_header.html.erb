@@ -1,0 +1,9 @@
+<div id="header_left">
+	<%= image_tag 'zeichnung.jpg' %>
+</div>
+<div id="header_right">
+	<h1>Hotel Am Lindenhof</h1>
+	<h2>An der Feldmark 5 - 30453 Hannover</h2>
+	<h2>Telefon: +49 (0) 511 / 70 03 99 45</h2>
+	<%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+</div>

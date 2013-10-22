@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<%= render "/refinery/html_tag" %>
+<% site_bar = render('/refinery/site_bar', :head => true) -%>
+<head>
+	<%= render "/refinery/head" %>
+</head>
+<body id="<%= canonical_id @page %>" class="page">
+	<%= site_bar -%>
+	<div style="clear: both;"></div>
+	<div class="container">
+		<div class="box">
+			<header>
+				<%= render "/refinery/header" -%>
+				<%= image_tag(@page.images.first.url, :class => "banner") unless @page.images.first.nil? %>
+			</header>
+			<section id="page">
+				<div class="topmargin20 wrapper">
+					<%= yield %>
+				</div>
+			</section>
+			<footer>
+				<%= render "/refinery/footer" -%>
+			</footer>
+		</div>
+	</div>
+	<%= render "/refinery/javascripts" %>
+</body>
+</html>
