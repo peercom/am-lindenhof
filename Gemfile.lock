@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/capistrano/capistrano.git
+  revision: 51aa74234a68d1e39d68a76f85f59216b009792b
+  specs:
+    capistrano (3.0.0)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 0.0.23)
+
+GIT
   remote: git://github.com/refinery/refinerycms-inquiries.git
   revision: 2733f058cb86c713486e347ee2e8959c90452f8f
   branch: 2-1-stable
@@ -45,10 +54,6 @@ GEM
     babosa (0.3.11)
     bcrypt-ruby (3.1.2)
     builder (3.0.4)
-    capistrano (3.0.0)
-      i18n
-      rake (>= 10.0.0)
-      sshkit (>= 0.0.23)
     capistrano-bundler (1.0.0)
       capistrano (>= 3.0.0.pre)
     capistrano-rails (1.0.0)
@@ -217,7 +222,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capistrano
+  capistrano!
   capistrano-bundler
   capistrano-rails
   capistrano-rvm

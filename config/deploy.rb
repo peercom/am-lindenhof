@@ -1,8 +1,8 @@
-require 'capistrano/rails'
-require 'capistrano/bundler'
-require 'capistrano/rvm'
+#require 'capistrano/rails'
+#require 'capistrano/bundler'
+#require 'capistrano/rvm'
 
-set :application, 'Am Lindenhof'
+set :application, 'Am-Lindenhof'
 
 set :repo_url,  "git@github.com:peercom/am-lindenhof.git"
 
