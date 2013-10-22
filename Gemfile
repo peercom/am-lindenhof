@@ -29,6 +29,8 @@ gem 'therubyracer', :platforms => :ruby
 
 gem 'jquery-rails'
 
+gem 'seed_dump', '0.5.3'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
