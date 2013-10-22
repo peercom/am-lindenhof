@@ -1,0 +1,1200 @@
+
+---
+refinery_roles_users:
+  columns:
+  - user_id
+  - role_id
+  records: 
+  - - 1
+    - 1
+  - - 1
+    - 2
+
+---
+refinery_roles:
+  columns:
+  - id
+  - title
+  records: 
+  - - 1
+    - Refinery
+  - - 2
+    - Superuser
+
+---
+refinery_user_plugins:
+  columns:
+  - id
+  - user_id
+  - name
+  - position
+  records: 
+  - - 1
+    - 1
+    - refinery_users
+    - 4
+  - - 2
+    - 1
+    - refinery_dashboard
+    - 0
+  - - 3
+    - 1
+    - refinery_images
+    - 2
+  - - 4
+    - 1
+    - refinery_files
+    - 3
+  - - 5
+    - 1
+    - refinery_pages
+    - 1
+  - - 6
+    - 1
+    - refinery_i18n
+    - 5
+  - - 7
+    - 1
+    - refinery_core
+    - 6
+  - - 8
+    - 1
+    - refinery_dialogs
+    - 7
+  - - 9
+    - 1
+    - page_images
+    - 8
+  - - 10
+    - 1
+    - refinery_inquiries
+    - 
+  - - 11
+    - 1
+    - refinery_settings
+    - 6
+  - - 12
+    - 1
+    - refinerycms_inquiries
+    - 5
+
+---
+refinery_users:
+  columns:
+  - id
+  - username
+  - email
+  - encrypted_password
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - sign_in_count
+  - remember_created_at
+  - reset_password_token
+  - reset_password_sent_at
+  - created_at
+  - updated_at
+  - slug
+  records: 
+  - - 1
+    - admin
+    - holger@bit-vonameln.de
+    - $2a$10$vQRZWi59lPCtELFHqyUT1eb2eDM3ajm1SkRl3eCtH2fNYOJC92PSq
+    - '2013-10-22 07:14:01.258369'
+    - '2013-10-21 10:40:55.928404'
+    - 127.0.0.1
+    - 127.0.0.1
+    - 8
+    - 
+    - 
+    - 
+    - '2013-10-15 20:45:06.554607'
+    - '2013-10-22 07:14:01.309508'
+    - admin
+
+---
+refinery_page_parts:
+  columns:
+  - id
+  - refinery_page_id
+  - title
+  - body
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - Body
+    - ! "<p>einem gepflegten Haus mit angenehmem <strong>Ambiente</strong>, auch ein
+      ideales Domizil für Besucher der Messen in Hannover. Informieren Sie sich in
+      aller Ruhe über unser Haus, über die Preise und Lage in Hannover.<br />Wir hoffen
+      Sie schon bald als unsere Gäste begrüßen zu dürfen..</p>\r\n<h2>Rezeption</h2>\r\n<p>Bitte
+      beachten Sie, dass das Hotel am Lindenhof über keine Rezeption verfügt. Beim
+      Checkin erhalten Sie telefonisch einen Code, der es Ihnen erlaubt den Zimmerschlüssel
+      unserer Safeanlage zu entnehmen.</p>\r\n<img src=\"/system/images/W1siZiIsIjIwMTMvMTAvMjEvMTRfMTlfMjFfMTI3X3Bob25lLmpwZyJdLFsicCIsInRodW1iIiwiMjI1eDI1NT4iXSxbInAiLCJzdHJpcCJdXQ/phone.jpg\"
+      title=\"Phone\" alt=\"Phone\" data-rel=\"225x255\" width=\"200\" height=\"207\"
+      />\r\n<img src=\"/system/images/W1siZiIsIjIwMTMvMTAvMjEvMTRfMTlfNDNfMzUwX3NhZmVfdGh1bWIuanBnIl0sWyJwIiwidGh1bWIiLCIyMjV4MjU1PiJdLFsicCIsInN0cmlwIl1d/safe_thumb.jpg\"
+      title=\"Safe Thumb\" alt=\"Safe Thumb\" data-rel=\"225x255\" width=\"200\" height=\"207\"
+      />"
+    - 0
+    - '2013-10-15 20:44:08.845631'
+    - '2013-10-21 12:22:09.849115'
+  - - 2
+    - 1
+    - Side Body
+    - <p>Bitte beachten Sie, dass das Hotel am Lindenhof über keine Rezeption verfügt.
+      Beim Checkin erhalten Sie telefonisch einen Code, der es Ihnen erlaubt den Zimmerschlüssel
+      unserer Safeanlage zu entnehmen.</p>
+    - 1
+    - '2013-10-15 20:44:08.869797'
+    - '2013-10-21 12:22:09.856937'
+  - - 3
+    - 2
+    - Body
+    - ! "<h2>Entschuldigen Sie, es gab ein Problem...</h2>\r\n<p>Die Seite, die sie
+      gesucht haben ist auf diesem Server nicht vorhanden.</p>\r\n<p><a href=\"/\"
+      title=\"Willkommen im Hotel am Lindenhof\">Zurück zur Startseite</a>\r\n</p>"
+    - 0
+    - '2013-10-15 20:44:08.920225'
+    - '2013-10-17 11:52:09.953392'
+  - - 4
+    - 3
+    - Body
+    - <p>Wir bieten Ihnen komfortable Einzelzimmer und Doppelzimmer mit Dusche/WC
+      und TV sowie 2-Zimmer Appartements mit Wohnküche, Dusche/WC und TV</p>
+    - 0
+    - '2013-10-15 20:44:08.957060'
+    - '2013-10-21 14:32:50.381458'
+  - - 5
+    - 3
+    - Side Body
+    - ''
+    - 1
+    - '2013-10-15 20:44:08.967117'
+    - '2013-10-21 14:32:50.388061'
+  - - 6
+    - 4
+    - Body
+    - <p>Sie finden das Gästehaus Am Lindenhof in ruhiger Lage und dennoch direkt
+      an der B 65 in Hannover-Bornum. Von hier erreichen Sie mit dem PKW in nur 15
+      Minuten die City und das Messegelände. Bus- und S-Bahn-Anschluß in die City
+      sind vorhanden. Genügend Parkplätze für PKW und Busse stehen zur Verfügung.</p>
+    - 0
+    - '2013-10-16 17:53:14.380216'
+    - '2013-10-21 14:52:40.346967'
+  - - 7
+    - 4
+    - Side Body
+    - ''
+    - 1
+    - '2013-10-16 17:53:14.389664'
+    - '2013-10-21 14:52:40.351028'
+  - - 8
+    - 5
+    - Body
+    - <p>Bitte füllen Sie die Formularfelder vollständig aus, damit wir Ihre Nachricht
+      bestmöglich bearbeiten können. Zur Bearbeitung Ihrer Anfrage werden die Daten
+      elektronisch gespeichert. Die Weitergabe an Dritte ist ausgeschlossen.</p>
+    - 0
+    - '2013-10-16 19:55:38.426737'
+    - '2013-10-21 14:52:58.720343'
+  - - 9
+    - 5
+    - Side Body
+    - ''
+    - 1
+    - '2013-10-16 19:55:38.437675'
+    - '2013-10-21 14:52:58.724240'
+  - - 10
+    - 6
+    - Body
+    - ! "<p>Wir haben Ihre Anfrage erhalten und melden uns kurzfristig bei Ihnen.</p>\r\n<p><a
+      href=\"/\" title=\"Willkommen im Hotel am Lindenhof\">Zurück zur Startseite</a>\r\n</p>"
+    - 0
+    - '2013-10-16 19:55:38.478606'
+    - '2013-10-18 16:05:48.310433'
+  - - 11
+    - 7
+    - Body
+    - <p>We respect your privacy. We do not market, rent or sell our email list to
+      any outside parties.</p><p>We need your e-mail address so that we can ensure
+      that the people using our forms are bona fide. It also allows us to send you
+      e-mail newsletters and other communications, if you opt-in. Your postal address
+      is required in order to send you information and pricing, if you request it.</p><p>Please
+      call us at 123 456 7890 if you have any questions or concerns.</p>
+    - 0
+    - '2013-10-16 19:55:38.523099'
+    - '2013-10-16 19:55:38.523099'
+  - - 12
+    - 8
+    - Body
+    - ! "<p><strong>Inhaber:</strong> Frank Niebuhr<br />An der Feldmark 5<br />30453
+      Hannover<br />Deutschland</p>\r\n<p>Steuer-Nr.: 24/131/08909</p>\r\n<h3>Haftung
+      für Inhalte</h3>\r\n<p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt
+      erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können
+      wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1
+      TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+      Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet,
+      übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach
+      Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen
+      zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen
+      Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst
+      ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei
+      Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte
+      umgehend entfernen.</p>\r\n<h3>Datenschutz</h3>\r\n<p>Die Nutzung unserer Webseite
+      ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren
+      Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen)
+      erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis.
+      Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
+      Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation
+      per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten
+      vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im Rahmen der
+      Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung
+      von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird
+      hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich
+      rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen,
+      etwa durch Spam-Mails, vor.</p>"
+    - 0
+    - '2013-10-21 10:15:36.598784'
+    - '2013-10-22 07:20:34.100674'
+  - - 13
+    - 8
+    - Side Body
+    - ''
+    - 1
+    - '2013-10-21 10:15:36.650428'
+    - '2013-10-22 07:20:34.105065'
+
+---
+refinery_pages:
+  columns:
+  - id
+  - parent_id
+  - path
+  - slug
+  - show_in_menu
+  - link_url
+  - menu_match
+  - deletable
+  - draft
+  - skip_to_first_child
+  - lft
+  - rgt
+  - depth
+  - view_template
+  - layout_template
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 
+    - 
+    - startseite
+    - true
+    - /
+    - ^/$
+    - false
+    - false
+    - false
+    - 1
+    - 4
+    - 0
+    - show
+    - 
+    - '2013-10-15 20:44:08.770804'
+    - '2013-10-21 12:22:09.840484'
+  - - 2
+    - 1
+    - 
+    - page-not-found
+    - false
+    - ''
+    - ^/404$
+    - false
+    - false
+    - false
+    - 2
+    - 3
+    - 1
+    - home
+    - 
+    - '2013-10-15 20:44:08.892748'
+    - '2013-10-17 11:52:09.944046'
+  - - 3
+    - 
+    - 
+    - zimmer
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 5
+    - 6
+    - 0
+    - gallery
+    - 
+    - '2013-10-15 20:44:08.940159'
+    - '2013-10-21 14:32:50.373734'
+  - - 4
+    - 
+    - 
+    - anfahrt
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 7
+    - 8
+    - 0
+    - show
+    - 
+    - '2013-10-16 17:53:14.373474'
+    - '2013-10-21 14:52:40.340856'
+  - - 5
+    - 
+    - 
+    - kontakt
+    - true
+    - /contact
+    - ^/(inquiries|contact).*$
+    - false
+    - false
+    - false
+    - 9
+    - 14
+    - 0
+    - show
+    - 
+    - '2013-10-16 19:55:38.408585'
+    - '2013-10-21 14:52:58.715277'
+  - - 6
+    - 5
+    - 
+    - vielen-dank
+    - false
+    - /contact/thank_you
+    - ^/(inquiries|contact)/thank_you$
+    - false
+    - false
+    - false
+    - 10
+    - 11
+    - 1
+    - show
+    - 
+    - '2013-10-16 19:55:38.453794'
+    - '2013-10-18 16:05:48.300768'
+  - - 7
+    - 5
+    - 
+    - privacy-policy
+    - false
+    - 
+    - 
+    - true
+    - false
+    - false
+    - 12
+    - 13
+    - 1
+    - 
+    - 
+    - '2013-10-16 19:55:38.498315'
+    - '2013-10-16 19:55:38.498315'
+  - - 8
+    - 
+    - 
+    - imprint
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 15
+    - 16
+    - 0
+    - show
+    - 
+    - '2013-10-21 10:15:36.588437'
+    - '2013-10-22 07:20:34.094787'
+
+---
+refinery_page_part_translations:
+  columns:
+  - id
+  - refinery_page_part_id
+  - locale
+  - body
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - en
+    - <p>einem gepflegten Haus mit angenehmem Ambiente, auch ein ideales Domizil für
+      Besucher der Messen in Hannover. Informieren Sie sich in aller Ruhe über unser
+      Haus, über die Preise und Lage in Hannover.<br />We hope to welcome you soon.</p>
+    - '2013-10-15 20:44:08.855016'
+    - '2013-10-16 20:18:26.940303'
+  - - 2
+    - 2
+    - en
+    - <p>Bitte beachten Sie, dass das Hotel am Lindenhof über keine Rezeption verfügt.
+      Beim Checkin erhalten Sie telefonisch einen Code, der es Ihnen erlaubt den Zimmerschlüssel
+      unserer Safeanlage zu entnehmen.</p>
+    - '2013-10-15 20:44:08.873070'
+    - '2013-10-16 17:16:53.072535'
+  - - 3
+    - 3
+    - en
+    - <h2>Sorry, there was a problem...</h2><p>The page you requested was not found.</p><p><a
+      href='/'>Return to the home page</a></p>
+    - '2013-10-15 20:44:08.922689'
+    - '2013-10-15 20:44:08.922689'
+  - - 4
+    - 4
+    - en
+    - <p>Wir bieten Ihnen komfortable Einzelzimmer und Doppelzimmer mit Dusche/WC
+      und TV sowie 2-Zimmer Appartements mit Wohnküche, Dusche/WC und TV</p>
+    - '2013-10-15 20:44:08.960550'
+    - '2013-10-16 17:17:35.921205'
+  - - 5
+    - 5
+    - en
+    - ''
+    - '2013-10-15 20:44:08.969606'
+    - '2013-10-16 17:57:42.630699'
+  - - 6
+    - 6
+    - en
+    - <p>Sie finden das Gästehaus Am Lindenhof in ruhiger Lage und dennoch direkt
+      an der B 65 in Hannover-Bornum. Von hier erreichen Sie mit dem PKW in nur 15
+      Minuten die City und das Messegelände. Bus- und S-Bahn-Anschluß in die City
+      sind vorhanden. Genügend Parkplätze für PKW und Busse stehen zur Verfügung.</p>
+    - '2013-10-16 17:53:14.386217'
+    - '2013-10-16 17:53:14.386217'
+  - - 7
+    - 7
+    - en
+    - ''
+    - '2013-10-16 17:53:14.393614'
+    - '2013-10-16 17:53:14.393614'
+  - - 8
+    - 8
+    - en
+    - <p>Get in touch with us. Just use the form below and we'll get back to you as
+      soon as we can. Please fill in all the detail to allow for a precise answer.</p>
+    - '2013-10-16 19:55:38.430482'
+    - '2013-10-17 11:53:42.214609'
+  - - 9
+    - 9
+    - en
+    - ''
+    - '2013-10-16 19:55:38.440422'
+    - '2013-10-16 19:55:38.440422'
+  - - 10
+    - 10
+    - en
+    - <p>We've received your inquiry and will get back to you with a response shortly.</p><p><a
+      href='/'>Return to the home page</a></p>
+    - '2013-10-16 19:55:38.481188'
+    - '2013-10-16 19:55:38.481188'
+  - - 11
+    - 11
+    - en
+    - <p>We respect your privacy. We do not market, rent or sell our email list to
+      any outside parties.</p><p>We need your e-mail address so that we can ensure
+      that the people using our forms are bona fide. It also allows us to send you
+      e-mail newsletters and other communications, if you opt-in. Your postal address
+      is required in order to send you information and pricing, if you request it.</p><p>Please
+      call us at 123 456 7890 if you have any questions or concerns.</p>
+    - '2013-10-16 19:55:38.525755'
+    - '2013-10-16 19:55:38.525755'
+  - - 12
+    - 1
+    - de
+    - ! "<p>einem gepflegten Haus mit angenehmem <strong>Ambiente</strong>, auch ein
+      ideales Domizil für Besucher der Messen in Hannover. Informieren Sie sich in
+      aller Ruhe über unser Haus, über die Preise und Lage in Hannover.<br />Wir hoffen
+      Sie schon bald als unsere Gäste begrüßen zu dürfen..</p>\r\n<h2>Rezeption</h2>\r\n<p>Bitte
+      beachten Sie, dass das Hotel am Lindenhof über keine Rezeption verfügt. Beim
+      Checkin erhalten Sie telefonisch einen Code, der es Ihnen erlaubt den Zimmerschlüssel
+      unserer Safeanlage zu entnehmen.</p>\r\n<img src=\"/system/images/W1siZiIsIjIwMTMvMTAvMjEvMTRfMTlfMjFfMTI3X3Bob25lLmpwZyJdLFsicCIsInRodW1iIiwiMjI1eDI1NT4iXSxbInAiLCJzdHJpcCJdXQ/phone.jpg\"
+      title=\"Phone\" alt=\"Phone\" data-rel=\"225x255\" width=\"200\" height=\"207\"
+      />\r\n<img src=\"/system/images/W1siZiIsIjIwMTMvMTAvMjEvMTRfMTlfNDNfMzUwX3NhZmVfdGh1bWIuanBnIl0sWyJwIiwidGh1bWIiLCIyMjV4MjU1PiJdLFsicCIsInN0cmlwIl1d/safe_thumb.jpg\"
+      title=\"Safe Thumb\" alt=\"Safe Thumb\" data-rel=\"225x255\" width=\"200\" height=\"207\"
+      />"
+    - '2013-10-16 20:18:54.125485'
+    - '2013-10-21 12:22:09.853076'
+  - - 13
+    - 2
+    - de
+    - <p>Bitte beachten Sie, dass das Hotel am Lindenhof über keine Rezeption verfügt.
+      Beim Checkin erhalten Sie telefonisch einen Code, der es Ihnen erlaubt den Zimmerschlüssel
+      unserer Safeanlage zu entnehmen.</p>
+    - '2013-10-16 20:18:54.132008'
+    - '2013-10-16 20:18:54.134066'
+  - - 14
+    - 4
+    - de
+    - <p>Wir bieten Ihnen komfortable Einzelzimmer und Doppelzimmer mit Dusche/WC
+      und TV sowie 2-Zimmer Appartements mit Wohnküche, Dusche/WC und TV</p>
+    - '2013-10-17 09:31:59.088440'
+    - '2013-10-17 09:31:59.090457'
+  - - 15
+    - 5
+    - de
+    - ''
+    - '2013-10-17 09:31:59.094446'
+    - '2013-10-17 09:31:59.125063'
+  - - 16
+    - 6
+    - de
+    - <p>Sie finden das Gästehaus Am Lindenhof in ruhiger Lage und dennoch direkt
+      an der B 65 in Hannover-Bornum. Von hier erreichen Sie mit dem PKW in nur 15
+      Minuten die City und das Messegelände. Bus- und S-Bahn-Anschluß in die City
+      sind vorhanden. Genügend Parkplätze für PKW und Busse stehen zur Verfügung.</p>
+    - '2013-10-17 09:32:13.405891'
+    - '2013-10-17 09:32:13.407790'
+  - - 17
+    - 7
+    - de
+    - ''
+    - '2013-10-17 09:32:13.411498'
+    - '2013-10-17 09:32:13.414159'
+  - - 18
+    - 3
+    - de
+    - ! "<h2>Entschuldigen Sie, es gab ein Problem...</h2>\r\n<p>Die Seite, die sie
+      gesucht haben ist auf diesem Server nicht vorhanden.</p>\r\n<p><a href=\"/\"
+      title=\"Willkommen im Hotel am Lindenhof\">Zurück zur Startseite</a>\r\n</p>"
+    - '2013-10-17 11:52:09.956047'
+    - '2013-10-17 11:52:09.958687'
+  - - 19
+    - 8
+    - de
+    - <p>Bitte füllen Sie die Formularfelder vollständig aus, damit wir Ihre Nachricht
+      bestmöglich bearbeiten können. Zur Bearbeitung Ihrer Anfrage werden die Daten
+      elektronisch gespeichert. Die Weitergabe an Dritte ist ausgeschlossen.</p>
+    - '2013-10-17 11:53:06.099475'
+    - '2013-10-17 11:53:06.102106'
+  - - 20
+    - 9
+    - de
+    - ''
+    - '2013-10-17 11:53:06.105939'
+    - '2013-10-17 11:53:06.107833'
+  - - 21
+    - 10
+    - de
+    - ! "<p>Wir haben Ihre Anfrage erhalten und melden uns kurzfristig bei Ihnen.</p>\r\n<p><a
+      href=\"/\" title=\"Willkommen im Hotel am Lindenhof\">Zurück zur Startseite</a>\r\n</p>"
+    - '2013-10-18 16:05:48.313301'
+    - '2013-10-18 16:05:48.316040'
+  - - 22
+    - 12
+    - de
+    - ! "<p><strong>Inhaber:</strong> Frank Niebuhr<br />An der Feldmark 5<br />30453
+      Hannover<br />Deutschland</p>\r\n<p>Steuer-Nr.: 24/131/08909</p>\r\n<h3>Haftung
+      für Inhalte</h3>\r\n<p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt
+      erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können
+      wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1
+      TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+      Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet,
+      übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach
+      Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen
+      zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen
+      Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst
+      ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei
+      Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte
+      umgehend entfernen.</p>\r\n<h3>Datenschutz</h3>\r\n<p>Die Nutzung unserer Webseite
+      ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren
+      Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen)
+      erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis.
+      Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
+      Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation
+      per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten
+      vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im Rahmen der
+      Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung
+      von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird
+      hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich
+      rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen,
+      etwa durch Spam-Mails, vor.</p>"
+    - '2013-10-21 10:15:36.647345'
+    - '2013-10-22 07:20:34.102923'
+  - - 23
+    - 13
+    - de
+    - ''
+    - '2013-10-21 10:15:36.653440'
+    - '2013-10-21 10:15:36.653440'
+  - - 24
+    - 12
+    - en
+    - <p>Imprint here</p>
+    - '2013-10-21 12:14:43.999642'
+    - '2013-10-21 12:14:44.001922'
+  - - 25
+    - 13
+    - en
+    - ''
+    - '2013-10-21 12:14:44.005739'
+    - '2013-10-21 12:14:44.007551'
+
+---
+refinery_page_translations:
+  columns:
+  - id
+  - refinery_page_id
+  - locale
+  - title
+  - custom_slug
+  - menu_title
+  - slug
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - en
+    - Welcome to the Hotel Am Lindenhof
+    - 
+    - Startseite
+    - startseite
+    - '2013-10-15 20:44:08.746797'
+    - '2013-10-21 08:18:13.130859'
+  - - 2
+    - 2
+    - en
+    - Page not found
+    - 
+    - 
+    - page-not-found
+    - '2013-10-15 20:44:08.887966'
+    - '2013-10-15 20:44:08.896341'
+  - - 3
+    - 3
+    - en
+    - Zimmer
+    - 
+    - ''
+    - zimmer
+    - '2013-10-15 20:44:08.936948'
+    - '2013-10-16 17:17:35.916634'
+  - - 4
+    - 4
+    - en
+    - Der Weg zu uns
+    - 
+    - Anfahrt
+    - anfahrt
+    - '2013-10-16 17:53:14.368782'
+    - '2013-10-16 17:53:14.377655'
+  - - 5
+    - 5
+    - en
+    - Contact us
+    - 
+    - ''
+    - contact-us
+    - '2013-10-16 19:55:38.402535'
+    - '2013-10-17 11:53:42.208998'
+  - - 6
+    - 6
+    - en
+    - Thank You
+    - 
+    - 
+    - thank-you
+    - '2013-10-16 19:55:38.450617'
+    - '2013-10-16 19:55:38.457240'
+  - - 7
+    - 7
+    - en
+    - Privacy Policy
+    - 
+    - 
+    - privacy-policy
+    - '2013-10-16 19:55:38.493834'
+    - '2013-10-16 19:55:38.501614'
+  - - 8
+    - 1
+    - de
+    - Willkommen im Hotel am Lindenhof
+    - 
+    - Startseite
+    - 
+    - '2013-10-16 20:18:53.978871'
+    - '2013-10-16 20:18:54.119942'
+  - - 9
+    - 3
+    - de
+    - Zimmer
+    - 
+    - ''
+    - 
+    - '2013-10-17 09:31:59.036424'
+    - '2013-10-17 09:31:59.083234'
+  - - 10
+    - 4
+    - de
+    - Der Weg zu uns
+    - 
+    - Anfahrt
+    - 
+    - '2013-10-17 09:32:13.388904'
+    - '2013-10-17 09:32:13.401256'
+  - - 11
+    - 2
+    - de
+    - Page not found
+    - 
+    - ''
+    - 
+    - '2013-10-17 11:52:09.408518'
+    - '2013-10-17 11:52:09.948827'
+  - - 12
+    - 5
+    - de
+    - Kontakt zu uns
+    - 
+    - Kontakt
+    - kontakt
+    - '2013-10-17 11:53:05.926022'
+    - '2013-10-17 12:22:47.579832'
+  - - 13
+    - 6
+    - de
+    - Vielen Dank!
+    - 
+    - ''
+    - vielen-dank
+    - '2013-10-18 16:05:48.122086'
+    - '2013-10-18 16:05:48.304666'
+  - - 14
+    - 8
+    - de
+    - Impressum
+    - 
+    - ''
+    - impressum
+    - '2013-10-21 10:15:36.508858'
+    - '2013-10-21 10:15:36.595190'
+  - - 15
+    - 8
+    - en
+    - Imprint
+    - 
+    - ''
+    - imprint
+    - '2013-10-21 12:14:43.942359'
+    - '2013-10-21 12:14:43.994599'
+
+---
+refinery_images:
+  columns:
+  - id
+  - image_mime_type
+  - image_name
+  - image_size
+  - image_width
+  - image_height
+  - image_uid
+  - created_at
+  - updated_at
+  records: 
+  - - 2
+    - image/jpeg
+    - img2.jpg
+    - 92947
+    - 940
+    - 450
+    - 2013/10/16/19_40_10_345_img2.jpg
+    - '2013-10-16 17:40:10.346963'
+    - '2013-10-16 17:40:10.346963'
+  - - 3
+    - image/jpeg
+    - zeichnung.jpg
+    - 31225
+    - 300
+    - 291
+    - 2013/10/17/11_47_23_343_zeichnung.jpg
+    - '2013-10-17 09:47:23.346021'
+    - '2013-10-17 09:47:23.346021'
+  - - 4
+    - image/png
+    - img1.png
+    - 386203
+    - 940
+    - 260
+    - 2013/10/21/12_41_58_719_img1.png
+    - '2013-10-21 10:41:58.722747'
+    - '2013-10-21 10:41:58.722747'
+  - - 5
+    - image/jpeg
+    - Zimmer 5.jpg
+    - 76368
+    - 667
+    - 1000
+    - 2013/10/21/13_29_45_177_Zimmer_5.jpg
+    - '2013-10-21 11:29:45.178871'
+    - '2013-10-21 11:29:45.178871'
+  - - 6
+    - image/jpeg
+    - Zimmer 7.jpg
+    - 73700
+    - 1000
+    - 667
+    - 2013/10/21/13_30_06_509_Zimmer_7.jpg
+    - '2013-10-21 11:30:06.510499'
+    - '2013-10-21 11:30:06.510499'
+  - - 7
+    - image/jpeg
+    - Zimmer 14.jpg
+    - 1581105
+    - 3456
+    - 5184
+    - 2013/10/21/13_30_39_579_Zimmer_14.jpg
+    - '2013-10-21 11:30:39.581781'
+    - '2013-10-21 11:30:39.581781'
+  - - 8
+    - image/jpeg
+    - phone.jpg
+    - 14459
+    - 200
+    - 207
+    - 2013/10/21/14_19_21_127_phone.jpg
+    - '2013-10-21 12:19:21.129003'
+    - '2013-10-21 12:19:21.129003'
+  - - 9
+    - image/jpeg
+    - safe_thumb.jpg
+    - 14289
+    - 200
+    - 207
+    - 2013/10/21/14_19_43_350_safe_thumb.jpg
+    - '2013-10-21 12:19:43.351984'
+    - '2013-10-21 12:19:43.351984'
+  - - 10
+    - image/png
+    - green.png
+    - 425752
+    - 940
+    - 262
+    - 2013/10/21/16_32_38_40_green.png
+    - '2013-10-21 14:32:38.045624'
+    - '2013-10-21 14:32:38.045624'
+
+---
+seo_meta:
+  columns:
+  - id
+  - seo_meta_id
+  - seo_meta_type
+  - browser_title
+  - meta_description
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-15 20:44:08.767516'
+    - '2013-10-15 22:21:54.784699'
+  - - 2
+    - 2
+    - Refinery::Page::Translation
+    - 
+    - 
+    - '2013-10-15 20:44:08.890747'
+    - '2013-10-15 20:44:08.890747'
+  - - 3
+    - 3
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-15 20:44:08.938709'
+    - '2013-10-16 17:17:35.730629'
+  - - 4
+    - 4
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-16 17:53:14.370507'
+    - '2013-10-16 17:53:14.370507'
+  - - 5
+    - 5
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-16 19:55:38.405727'
+    - '2013-10-16 19:57:59.153642'
+  - - 6
+    - 6
+    - Refinery::Page::Translation
+    - 
+    - 
+    - '2013-10-16 19:55:38.452391'
+    - '2013-10-16 19:55:38.452391'
+  - - 7
+    - 7
+    - Refinery::Page::Translation
+    - 
+    - 
+    - '2013-10-16 19:55:38.496492'
+    - '2013-10-16 19:55:38.496492'
+  - - 8
+    - 8
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-16 20:18:53.980398'
+    - '2013-10-16 20:18:53.980398'
+  - - 9
+    - 9
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-17 09:31:59.037971'
+    - '2013-10-17 09:31:59.037971'
+  - - 10
+    - 10
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-17 09:32:13.390064'
+    - '2013-10-17 09:32:13.390064'
+  - - 11
+    - 11
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-17 11:52:09.410082'
+    - '2013-10-17 11:52:09.410082'
+  - - 12
+    - 12
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-17 11:53:05.927407'
+    - '2013-10-17 11:53:05.927407'
+  - - 13
+    - 13
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-18 16:05:48.123529'
+    - '2013-10-18 16:05:48.123529'
+  - - 14
+    - 14
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-21 10:15:36.529731'
+    - '2013-10-21 10:15:36.529731'
+  - - 15
+    - 15
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - '2013-10-21 12:14:43.944307'
+    - '2013-10-21 12:14:43.944307'
+
+---
+refinery_image_pages:
+  columns:
+  - image_id
+  - page_id
+  - position
+  - caption
+  - id
+  - page_type
+  records: 
+  - - 4
+    - 1
+    - 0
+    - 
+    - 5
+    - Refinery::Page
+  - - 5
+    - 3
+    - 3
+    - 
+    - 6
+    - Refinery::Page
+  - - 6
+    - 3
+    - 1
+    - 
+    - 7
+    - Refinery::Page
+  - - 7
+    - 3
+    - 2
+    - 
+    - 8
+    - Refinery::Page
+  - - 10
+    - 3
+    - 0
+    - 
+    - 9
+    - Refinery::Page
+  - - 10
+    - 4
+    - 0
+    - 
+    - 10
+    - Refinery::Page
+  - - 10
+    - 5
+    - 0
+    - 
+    - 11
+    - Refinery::Page
+
+---
+refinery_image_page_translations:
+  columns:
+  - id
+  - refinery_image_page_id
+  - locale
+  - caption
+  - created_at
+  - updated_at
+  records: 
+  - - 8
+    - 5
+    - de
+    - 
+    - '2013-10-21 10:42:37.427026'
+    - '2013-10-21 10:42:37.427026'
+  - - 9
+    - 7
+    - de
+    - 
+    - '2013-10-21 14:32:50.261191'
+    - '2013-10-21 14:32:50.261191'
+  - - 10
+    - 8
+    - de
+    - 
+    - '2013-10-21 14:32:50.271342'
+    - '2013-10-21 14:32:50.271342'
+  - - 11
+    - 6
+    - de
+    - 
+    - '2013-10-21 14:32:50.281838'
+    - '2013-10-21 14:32:50.281838'
+
+---
+refinery_settings:
+  columns:
+  - id
+  - name
+  - value
+  - destroyable
+  - scoping
+  - restricted
+  - form_value_type
+  - created_at
+  - updated_at
+  - slug
+  records: 
+  - - 1
+    - inquiry_confirmation_body
+    - ! "--- ! 'Thank you for your inquiry %name%,\n\n\n  This email is a receipt
+      to confirm we have received your inquiry and we''ll be in\n  touch shortly.\n\n\n
+      \ Thanks.'\n"
+    - true
+    - 
+    - false
+    - text_area
+    - '2013-10-16 19:55:38.551269'
+    - '2013-10-16 19:55:38.551269'
+    - inquiry_confirmation_body
+  - - 2
+    - inquiry_confirmation_message_en
+    - ! "--- ! 'Thank you for your inquiry %name%,\n\n\n  This email is a receipt
+      to confirm we have received your inquiry and we''ll be in\n  touch shortly.\n\n\n
+      \ Thanks.'\n"
+    - true
+    - inquiries
+    - false
+    - text_area
+    - '2013-10-16 19:55:38.632549'
+    - '2013-10-16 19:55:38.632549'
+    - inquiry_confirmation_message_en
+  - - 3
+    - inquiry_confirmation_subject_en
+    - ! '--- Thank you for your inquiry
+
+      ...
+
+'
+    - true
+    - inquiries
+    - false
+    - text_area
+    - '2013-10-16 19:55:38.652540'
+    - '2013-10-16 19:55:38.652540'
+    - inquiry_confirmation_subject_en
+  - - 4
+    - inquiry_notification_recipients
+    - ! '--- ''''
+
+'
+    - true
+    - inquiries
+    - false
+    - text_area
+    - '2013-10-16 19:55:38.677538'
+    - '2013-10-16 19:55:38.677538'
+    - inquiry_notification_recipients
+  - - 5
+    - inquiry_notification_subject
+    - ! '--- New inquiry from your website
+
+      ...
+
+'
+    - true
+    - inquiries
+    - false
+    - text_area
+    - '2013-10-16 19:55:38.711130'
+    - '2013-10-16 19:55:38.711130'
+    - inquiry_notification_subject
+  - - 6
+    - inquiry_send_confirmation
+    - ! '--- ''true''
+
+'
+    - true
+    - inquiries
+    - false
+    - text_area
+    - '2013-10-16 19:55:38.770480'
+    - '2013-10-16 19:55:38.770480'
+    - inquiry_send_confirmation
+  - - 7
+    - inquiry_confirmation_message_de
+    - ! "--- Vielen Dank für Ihre Anfrage. Wir werden uns schnellstmöglich mit Ihnen
+      in Verbindung\n  setzen.\n...\n"
+    - true
+    - 
+    - false
+    - text_area
+    - '2013-10-21 12:32:02.428464'
+    - '2013-10-21 12:32:02.428464'
+    - inquiry_confirmation_message_de
