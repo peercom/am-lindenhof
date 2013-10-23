@@ -122,9 +122,11 @@ h1#body_content_title {
 }
 
 #body h2 {
-font: 20px Georgia, "Times New Roman", Times, serif;
-color: #585751;
-font-style: italic;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	color: #585751;
+	font-style: italic;
+	letter-spacing: 4px;
+	line-height: 20px;
 }
 
 .right {

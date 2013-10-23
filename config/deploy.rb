@@ -9,6 +9,10 @@ set :repo_url,  "git@github.com:peercom/am-lindenhof.git"
 set :rvm_type, :user
 set :rvm_ruby_version, '1.9.3@refinery'
 
+
+set :linked_dirs, %w{bin log tmp/backup tmp/pids tmp/cache tmp/sockets vendor/bundle}
+set :linked_dirs, fetch(:linked_dirs) + %w{public/system}
+
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # set :deploy_to, '/var/www/my_app'
